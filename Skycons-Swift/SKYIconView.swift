@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-enum Skycons
+public enum Skycons
 {
     case clearDay,clearNight,rain,sleet,wind,fog,cloudy,partlyCloudyDay,partlyCloudyNight,snow
 }
@@ -65,7 +65,7 @@ let WIND_PATHS = [
 
 let Wind_OFFSETS = [SKYWindOffset(start: 0.36, end: 0.11), SKYWindOffset(start: 0.56, end: 0.16)]
 
-class SKYIconView: UIView {
+public class SKYIconView: UIView {
     
     fileprivate var _type = Skycons.clearDay
     fileprivate var _color = UIColor.black
@@ -83,7 +83,7 @@ class SKYIconView: UIView {
         return min(w, h)
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
        self.play()
     }
@@ -92,32 +92,32 @@ class SKYIconView: UIView {
         super.init(coder: aDecoder)
     }
     
-    var setType: Skycons {
+    public var setType: Skycons {
         get { return _type }
         set { _type = newValue }
     }
     
-    var setColor: UIColor {
+    public var setColor: UIColor {
         get { return _color }
         set { _color = newValue }
     }
     
-    func refresh() {
+    public func refresh() {
         self.setNeedsDisplay()
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
 //     super.drawRect(rect)
         
         let ctx: CGContext = UIGraphicsGetCurrentContext()!
         self.drawRect(rect, inContext: ctx)
     }
     
-    func isAnimating() -> Bool {
+    public func isAnimating() -> Bool {
         return self._timer != nil
     }
     
-    func play() {
+    public func play() {
         
         
         
@@ -127,7 +127,7 @@ class SKYIconView: UIView {
         self._timer = Timer.scheduledTimer(timeInterval: 1/30, target: self, selector: #selector(update(_:)), userInfo: nil, repeats: true)
     }
     
-    func pause() {
+    public func pause() {
         
         if self._timer != nil {
             self._timer?.invalidate()
@@ -136,7 +136,7 @@ class SKYIconView: UIView {
         self._timer = nil
     }
     
-    @objc func update(_ timer:Timer) {
+    @objc public func update(_ timer:Timer) {
         self.refresh()
     }
     

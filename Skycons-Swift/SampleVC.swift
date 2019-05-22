@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Skycons
 
 class SampleVC: UIViewController {
 
@@ -16,7 +16,6 @@ class SampleVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         let weatherTypes: [Skycons] =
             [

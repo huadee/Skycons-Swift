@@ -7,15 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0033CA2295B69E005A7334 /* Skycons.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0033C82295B69E005A7334 /* Skycons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D0033CD2295B69E005A7334 /* Skycons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0033C62295B69E005A7334 /* Skycons.framework */; };
+		9D0033CE2295B69E005A7334 /* Skycons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0033C62295B69E005A7334 /* Skycons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D0033D32295B6A6005A7334 /* SKYIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A50F621D147E4C006932FC /* SKYIconView.swift */; };
 		E8A50F511D147E25006932FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A50F501D147E25006932FC /* AppDelegate.swift */; };
 		E8A50F561D147E25006932FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A50F541D147E25006932FC /* Main.storyboard */; };
 		E8A50F581D147E25006932FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A50F571D147E25006932FC /* Assets.xcassets */; };
 		E8A50F5B1D147E25006932FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A50F591D147E25006932FC /* LaunchScreen.storyboard */; };
-		E8A50F641D147E4C006932FC /* SKYIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A50F621D147E4C006932FC /* SKYIconView.swift */; };
 		E8A50F651D147E4C006932FC /* SampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A50F631D147E4C006932FC /* SampleVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9D0033CB2295B69E005A7334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8A50F451D147E25006932FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D0033C52295B69E005A7334;
+			remoteInfo = Skycons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D0033D22295B69E005A7334 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D0033CE2295B69E005A7334 /* Skycons.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9D0033C62295B69E005A7334 /* Skycons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Skycons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0033C82295B69E005A7334 /* Skycons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skycons.h; sourceTree = "<group>"; };
+		9D0033C92295B69E005A7334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A50F4D1D147E25006932FC /* Skycons-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skycons-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A50F501D147E25006932FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8A50F551D147E25006932FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,20 +57,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E8A50F4A1D147E25006932FC /* Frameworks */ = {
+		9D0033C32295B69E005A7334 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8A50F4A1D147E25006932FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D0033CD2295B69E005A7334 /* Skycons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0033C72295B69E005A7334 /* Skycons */ = {
+			isa = PBXGroup;
+			children = (
+				9D0033C82295B69E005A7334 /* Skycons.h */,
+				9D0033C92295B69E005A7334 /* Info.plist */,
+			);
+			path = Skycons;
+			sourceTree = "<group>";
+		};
 		E8A50F441D147E25006932FC = {
 			isa = PBXGroup;
 			children = (
 				E8A50F4F1D147E25006932FC /* Skycons-Swift */,
+				9D0033C72295B69E005A7334 /* Skycons */,
 				E8A50F4E1D147E25006932FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E8A50F4D1D147E25006932FC /* Skycons-Swift.app */,
+				9D0033C62295B69E005A7334 /* Skycons.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +118,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9D0033C12295B69E005A7334 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D0033CA2295B69E005A7334 /* Skycons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9D0033C52295B69E005A7334 /* Skycons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D0033D12295B69E005A7334 /* Build configuration list for PBXNativeTarget "Skycons" */;
+			buildPhases = (
+				9D0033C12295B69E005A7334 /* Headers */,
+				9D0033C22295B69E005A7334 /* Sources */,
+				9D0033C32295B69E005A7334 /* Frameworks */,
+				9D0033C42295B69E005A7334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skycons;
+			productName = Skycons;
+			productReference = 9D0033C62295B69E005A7334 /* Skycons.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E8A50F4C1D147E25006932FC /* Skycons-Swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8A50F5F1D147E25006932FC /* Build configuration list for PBXNativeTarget "Skycons-Swift" */;
@@ -77,10 +155,12 @@
 				E8A50F491D147E25006932FC /* Sources */,
 				E8A50F4A1D147E25006932FC /* Frameworks */,
 				E8A50F4B1D147E25006932FC /* Resources */,
+				9D0033D22295B69E005A7334 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D0033CC2295B69E005A7334 /* PBXTargetDependency */,
 			);
 			name = "Skycons-Swift";
 			productName = "Skycons-Swift";
@@ -97,6 +177,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Miwand Najafe";
 				TargetAttributes = {
+					9D0033C52295B69E005A7334 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					E8A50F4C1D147E25006932FC = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0940;
@@ -108,6 +192,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -117,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				E8A50F4C1D147E25006932FC /* Skycons-Swift */,
+				9D0033C52295B69E005A7334 /* Skycons */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9D0033C42295B69E005A7334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8A50F4B1D147E25006932FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,17 +228,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9D0033C22295B69E005A7334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D0033D32295B6A6005A7334 /* SKYIconView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8A50F491D147E25006932FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E8A50F511D147E25006932FC /* AppDelegate.swift in Sources */,
-				E8A50F641D147E4C006932FC /* SKYIconView.swift in Sources */,
 				E8A50F651D147E4C006932FC /* SampleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D0033CC2295B69E005A7334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D0033C52295B69E005A7334 /* Skycons */;
+			targetProxy = 9D0033CB2295B69E005A7334 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E8A50F541D147E25006932FC /* Main.storyboard */ = {
@@ -167,6 +275,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9D0033CF2295B69E005A7334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Skycons/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jukui.Skycons;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D0033D02295B69E005A7334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Skycons/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jukui.Skycons;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E8A50F5D1D147E25006932FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,7 +448,9 @@
 		E8A50F601D147E25006932FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Skycons-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "solutions.abstract.Skycons-Swift";
@@ -289,7 +463,9 @@
 		E8A50F611D147E25006932FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Skycons-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "solutions.abstract.Skycons-Swift";
@@ -302,6 +478,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9D0033D12295B69E005A7334 /* Build configuration list for PBXNativeTarget "Skycons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D0033CF2295B69E005A7334 /* Debug */,
+				9D0033D02295B69E005A7334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E8A50F481D147E25006932FC /* Build configuration list for PBXProject "Skycons-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
